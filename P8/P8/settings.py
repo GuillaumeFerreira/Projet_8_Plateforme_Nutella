@@ -31,14 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'store.apps.StoreConfig',
+    'plateforme_pur_beurre.apps.PlateformePurBeurreConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'debug_toolbar',
+
 ]
 
 MIDDLEWARE = [
@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+ 
 ]
 
 ROOT_URLCONF = 'P8.urls'
@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'P8.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'ENGINE':'django.db.backends.postgresql',
+        'NAME':'postgres',
         'USER':'postgres',
-        'PASSWORD':'guillaume31',
+        'PASSWORD':' ',
         'HOST':'',
         'PORT':'5432',
     }

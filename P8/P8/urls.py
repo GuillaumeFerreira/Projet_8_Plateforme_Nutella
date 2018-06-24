@@ -17,12 +17,12 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.urls import path
-from store import views
+from plateforme_pur_beurre import views
 
 urlpatterns = [
     url(r'^$', views.index),
-    url(r'^store/', include('store.urls')),
-    url(r'^admin/', admin.site.urls)
+    #url(r'^store/', include('store.urls')),
+    #url(r'^admin/', admin.site.urls)
 ]
 
 if settings.DEBUG:
