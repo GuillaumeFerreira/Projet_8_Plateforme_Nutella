@@ -21,6 +21,9 @@ from plateforme_pur_beurre import views
 
 urlpatterns = [
     url(r'^$', views.index),
+	url(r'^resultat/', views.resultat),
+	url(r'^aliment/', views.aliment),
+	url(r'^compte/', views.compte),
     #url(r'^store/', include('store.urls')),
     #url(r'^admin/', admin.site.urls)
 ]
